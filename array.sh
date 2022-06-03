@@ -14,8 +14,8 @@ do
         then
                 sec_largest=$((largest))
                 largest=$((arr[i]))
-        fi
-        if(( ((arr[i]>sec_largest)) && arr[i]!=largest));
+        
+        elif(( ((arr[i]>sec_largest)) && arr[i]!=largest));
         then
                 sec_largest=$((arr[i]))
         fi
@@ -29,8 +29,8 @@ do
    then
       sec_smallest=$((smallest))
       smallest=$((arr[i]))
-   fi
-   if(( ((arr[i]>sec_largest)) && arr[i] < smallest));
+   
+   elif(( ((arr[i]>sec_largest)) && arr[i] < smallest));
    then
       sec_smallest=$((arr[i]))
    fi
